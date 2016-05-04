@@ -1,6 +1,6 @@
 setMode -pff
 setMode -pff
-addConfigDevice  -name "HF_F1_DDR_DM.mcs" -path "."
+addConfigDevice  -name "VC709_30102.mcs" -path "."
 setSubmode -pffbpi
 setAttribute -configdevice -attr multibootBpiType -value "TYPE_BPI"
 setAttribute -configdevice -attr multibootBpichainType -value "PARALLEL"
@@ -37,7 +37,7 @@ setMode -pff
 setSubmode -pffbpi
 setMode -pff
 setAttribute -design -attr RSPin -value "00"
-addDevice -p 1 -file "HF_F1_DDR_DM.bit" 
+addDevice -p 1 -file "VC709_30102.bit" 
 setAttribute -design -attr RSPinMsb -value "1"
 setAttribute -design -attr name -value "0"
 setAttribute -design -attr RSPin -value "00"

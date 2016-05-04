@@ -48,7 +48,7 @@ elif [ "$extension" == "bit" ]; then
     # if option -g is used the mcs file is generated
     if $fileGenFlag; then	
         cat impact_mem_file_gen_tmp.cmd | sed "s/FILENAME/$name/" > impact_mem_file_gen_script.cmd
-        impact -batch impact_mem_file_gen.cmd
+        impact -batch impact_mem_file_gen_script.cmd
         echo ".mcs file generated"
         exit
     fi  
